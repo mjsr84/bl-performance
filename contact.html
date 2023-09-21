@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BL Performance</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/6b27559972.js"
       crossorigin="anonymous"
     ></script>
+    <title>Contact</title>
   </head>
-
   <header>
     <button id="closeMenu" class="close-menu">
       <i class="fa-solid fa-arrow-left fa-5x"></i>
@@ -56,7 +55,53 @@
       </button>
     </div>
   </header>
-  <body></body>
+  <body>
+    <h1>Contact</h1>
+    <div class="contact-form">
+      <form action="sendmail.php" method="post" id="contactForm">
+        <label class="input-labels" for="name">Name: </label>
+        <input
+          class="input-fields"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
+        <label class="input-labels" for="phone">Phone: </label>
+        <input type="tel" class="input-fields" id="phone" name="phone" />
+        <label class="input-labels" for="email">Email: </label>
+        <input
+          class="input-fields"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <label class="input-labels" for="message">Message: </label>
+        <textarea
+          class="input-fields"
+          id="message"
+          name="message"
+          required
+        ></textarea>
+        <input id="contactSubmit" type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="sections">
+      <h2 class="section-headers">Directions</h2>
+      <div class="map-container">
+        <iframe
+          class="map"
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ53j33SgjxFQRAdp--FVtd9Y&key=AIzaSyCR8Q_gotOZT1RBswuBSUcm_lV7CN1a2Kk"
+        ></iframe>
+      </div>
+    </div>
+  </body>
   <footer class="footer">
     <div class="social-buttons">
       <button class="social-links fa-brands fa-facebook fa-3x"></button>
