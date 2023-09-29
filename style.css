@@ -15,12 +15,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-body {
-    background: linear-gradient(90deg,
-            var(--backgroundColor),
-            var(--backgroundColorLight));
-
-}
+body {}
 
 h1 {
     color: var(--secondaryColorLight);
@@ -51,10 +46,16 @@ header {
 }
 
 .imgContainer {
+    height: 180px;
     display: flex;
     justify-content: flex-end;
     padding: 1em;
     grid-area: logo;
+}
+
+.header-logo {
+    max-width: 100%;
+    height: 180px;
 }
 
 .navBar ul {
@@ -107,6 +108,7 @@ header {
     background-color: var(--backgroundColor);
     width: 100%;
     color: var(--secondaryColor);
+    cursor: pointer;
 }
 
 .menu-toggle:hover {
@@ -141,6 +143,7 @@ header {
     width: 50%;
     max-width: 500px;
     border-radius: 5px;
+    background-color: var(--secondaryColorLight);
 }
 
 .input-labels {
@@ -163,7 +166,6 @@ header {
 
 #contactSubmit:hover {
     box-shadow: 0 0 8px var(--mainColorLight);
-    text-shadow: 0 0 3px var(--mainColorLight);
 }
 
 .input-fields:hover {
@@ -174,13 +176,14 @@ header {
     box-shadow: 0 0 8px var(--mainColorLight);
     outline: none;
     border: 2px solid var(--mainColor);
-
+    background-color: white;
 }
 
 /* CONTACT PAGE END */
 /* FOOTER */
 footer {
     width: 100%;
+    background-color: var(--backgroundColorLight);
 }
 
 .social-buttons {
@@ -207,6 +210,10 @@ footer {
     header {
         justify-content: center;
 
+    }
+
+    .header-logo {
+        height: 150px;
     }
 
     .navBar {
