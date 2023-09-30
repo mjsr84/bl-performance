@@ -1,6 +1,6 @@
 const menuToggle = document.getElementById('menuToggle')
 const navMenu = document.querySelector('#nav-bar')
-const logo = document.querySelector('.imgContainer')
+const logo = document.querySelector('.headerImgContainer')
 const header = document.querySelector('header')
 const closeMenu = document.getElementById('closeMenu')
 

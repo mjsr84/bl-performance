@@ -12,62 +12,75 @@
   </head>
 
   <header>
-    <button id="closeMenu" class="close-menu">
-      <i class="fa-solid fa-arrow-left fa-5x"></i>
-    </button>
-    <div class="navBar" id="nav-bar">
-      <ul>
-        <li>
-          <a href="/index.html" class="nav-link"
-            ><i class="fa-solid fa-house"></i> Home</a
-          >
-        </li>
-        <li>
-          <a href="/services.html" class="nav-link"
-            ><i class="fa-solid fa-car-battery"></i> Services</a
-          >
-        </li>
-        <li>
-          <a href="/projects.html" class="nav-link"
-            ><i class="fa-solid fa-car"></i> Projects</a
-          >
-        </li>
-        <li>
-          <a href="/testimonials.html" class="nav-link"
-            ><i class="fa-solid fa-book-open"></i> Testimonials</a
-          >
-        </li>
-        <li>
-          <a href="/contact.html" class="nav-link"
-            ><i class="fa-solid fa-envelope"></i> Contact</a
-          >
-        </li>
-        <li>
-          <a href="/about.html" class="nav-link"
-            ><i class="fa-solid fa-address-card"></i> About Us</a
-          >
-        </li>
-      </ul>
+    <div class="headerImgContainer">
+      <img class="headerLogo" src="/images/logo2.png" alt="BL-Logo" />
     </div>
-    <div class="imgContainer">
-      <img class="header-logo" src="/images/logo2.png" alt="BL-Logo" />
-      <button id="menuToggle" class="menu-toggle">
+      <button id="closeMenu">
+        <i class="fa-solid fa-xmark fa-5x"></i>
+      </button>
+      <div class="navBar">
+        <ul id="navBar">
+          <li>
+            <a href="/index.html" class="nav-link"
+              ><i class="fa-solid fa-house"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="/services.html" class="nav-link"
+              ><i class="fa-solid fa-car-battery"></i> Services</a
+            >
+          </li>
+          <li>
+            <a href="/projects.html" class="nav-link"
+              ><i class="fa-solid fa-car"></i> Projects</a
+            >
+          </li>
+          <li>
+            <a href="/testimonials.html" class="nav-link"
+              ><i class="fa-solid fa-book-open"></i> Testimonials</a
+            >
+          </li>
+          <li>
+            <a href="/contact.html" class="nav-link"
+              ><i class="fa-solid fa-envelope"></i> Contact</a
+            >
+          </li>
+          <li>
+            <a href="/about.html" class="nav-link"
+              ><i class="fa-solid fa-address-card"></i> About Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <button id="menuToggle" class="menuToggle">
         <i class="fas fa-bars"></i>
       </button>
     </div>
   </header>
   <body>
-    <div class="mainSection" id="topSection">
-      <div id="mainSectionImages"></div>
+    <h1 id="mainSectionHeader">Main Section</h1>
 
-      <h1 id="mainSectionHeader">What We Do</h1>
-      <div id="mainSectionText">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-          tempora dolores rem fugit aperiam reprehenderit suscipit fugiat
-          pariatur est natus architecto quasi tenetur, omnis sint minima beatae,
-          delectus, quo porro.
-        </p>
+    <div class="mainSection" id="topSection">
+      <div class="mainSectionImgContainer">
+        <img src="/images/image14.jpg" alt="">
+      </div>
+      <div class="mainSectionAppt">
+       <h3>Schedule Appointment</h3>
+       <div id="apptInputContainer">
+       <label for="firstName">First Name: </label>
+       <input type="text" id="firstName">
+       <label for="lastName">Last Name:</label>
+       <input type="text" id="lastName">
+       <label for="phone">Phone: </label>
+       <input type="tel" id="phone">
+       <label for="date">Date: </label>
+       <input type="date" id="date">
+       <label for="time">Time: </label>
+       <input type="time" id="time">
+       </div>
+      </div>
+      <div class="mainSectionImgContainer2">
+        <img src="/images/image8.jpg" alt="">
       </div>
     </div>
     <div class="secondarySection" id="sectionTwo">
