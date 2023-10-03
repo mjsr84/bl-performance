@@ -13,11 +13,18 @@
 
   <header>
     <div class="headerImgContainer">
-      <img class="headerLogo" src="/images/logo2.png" alt="BL-Logo" />
+      <img
+        class="headerLogo"
+        id="headerLogo"
+        src="/images/logo2.png"
+        alt="BL-Logo"
+      />
     </div>
-      <button id="closeMenu">
-        <i class="fa-solid fa-xmark fa-5x"></i>
+    <div class="mobileMenu">
+      <button id="menuToggle" class="menuToggle">
+        <i class="fas fa-bars"></i>
       </button>
+
       <div class="navBar">
         <ul id="navBar">
           <li>
@@ -51,40 +58,59 @@
             >
           </li>
         </ul>
+        <button id="closeMenu">
+          <i class="fa-solid fa-xmark fa-5x"></i>
+        </button>
       </div>
-      <button id="menuToggle" class="menuToggle">
-        <i class="fas fa-bars"></i>
-      </button>
     </div>
   </header>
   <body>
-    <h1 id="mainSectionHeader">Main Section</h1>
+    <h1 id="mainSectionHeader">Leave it to the professionals</h1>
 
     <div class="mainSection" id="topSection">
       <div class="mainSectionImgContainer">
-        <img src="/images/image14.jpg" alt="">
+        <p class="imgText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui
+          provident dicta veniam vitae ex possimus debitis inventore quas in,
+          beatae totam repellat cum temporibus? Perspiciatis ipsum consectetur
+          debitis harum!
+        </p>
+        <img class="mainSectionImg" src="/images/image14.jpg" alt="image14" />
       </div>
+      <form action="post" id="apptForm"></form>
       <div class="mainSectionAppt">
-       <h3>Schedule Appointment</h3>
-       <div id="apptInputContainer">
-       <label for="firstName">First Name: </label>
-       <input type="text" id="firstName">
-       <label for="lastName">Last Name:</label>
-       <input type="text" id="lastName">
-       <label for="phone">Phone: </label>
-       <input type="tel" id="phone">
-       <label for="date">Date: </label>
-       <input type="date" id="date">
-       <label for="time">Time: </label>
-       <input type="time" id="time">
-       </div>
+        <label for="firstName"
+          ><p id="apptBoxTitle">Schedule Appointment</p></label
+        >
+        <div id="apptInputContainer">
+          <label class="apptLabels" for="firstName">First Name: </label>
+          <input class="inputField" type="text" id="firstName" />
+          <label class="apptLabels" for="lastName">Last Name:</label>
+          <input class="inputField" type="text" id="lastName" />
+          <label class="apptLabels" for="phone">Phone: </label>
+          <input class="inputField" type="tel" id="phone" />
+          <label class="apptLabels" for="date">Date: </label>
+          <input class="inputField" type="date" id="date" />
+          <label class="apptLabels" for="time">Time: </label>
+          <input class="inputField" type="time" id="time" />
+          <input type="Submit" id="submit" />
+        </div>
       </div>
-      <div class="mainSectionImgContainer2">
-        <img src="/images/image8.jpg" alt="">
+      <div class="mainSectionImgContainer">
+        <p class="imgText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus
+          excepturi nulla, commodi, quasi voluptas quae porro delectus
+          cupiditate numquam quas corporis mollitia animi explicabo. Voluptatum,
+          odit rerum porro molestiae similique ab ratione autem quae!
+        </p>
+        <img class="mainSectionImg" src="/images/image8.jpg" alt="image8" />
       </div>
     </div>
-    <div class="secondarySection" id="sectionTwo">
-      <h2>Subtopic</h2>
+    <div class="secondSection" id="sectionTwo">
+      <h2>Topic 1</h2>
+      <div id="sectionTwoImgContainer">
+        <img src="/images/image20.jpg" alt="image20BW" id="sectionTwoImg" />
+      </div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laborum,
         ipsam voluptates inventore accusamus provident asperiores optio eum sit
@@ -95,7 +121,7 @@
       </p>
     </div>
     <div>
-      <h2>Subtopic</h2>
+      <h2>Topic 2</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit beatae
         magni eveniet cumque, voluptatibus omnis iste amet laboriosam, corrupti
@@ -107,11 +133,11 @@
   </body>
   <footer class="footer">
     <div class="social-buttons">
+      <button class="social-links fa-brands fa-x-twitter fa-3x"></button>
       <button class="social-links fa-brands fa-facebook fa-3x"></button>
       <button class="social-links fa-brands fa-instagram fa-3x"></button>
       <button class="social-links fa-brands fa-youtube fa-3x"></button>
       <button class="social-links fa-brands fa-google fa-3x"></button>
-      <button class="social-links fa-brands fa-x-twitter fa-3x"></button>
     </div>
   </footer>
   <script src="script.js"></script>
