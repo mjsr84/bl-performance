@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 :root {
     --backgroundColor: #303030;
@@ -59,7 +60,7 @@ header {
 }
 
 .nav-link {
-    color: var(--mainColor);
+    color: var(--secondaryColorLight);
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -101,7 +102,7 @@ header {
 
 body {
     margin-top: 20em;
-    background-color: var(--secondaryColor);
+    background-color: var(--secondaryColorLight);
 }
 
 h1 {
@@ -133,102 +134,38 @@ h3 {
 }
 
 /********************************************************/
-/* MAIN SECTION */
-.mainSection {
-    display: flex;
-}
-
-.mainSectionImgContainer {
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    position: relative;
-    flex: auto;
-    border: 2px solid red;
-}
-
-.imgText {
-    position: absolute;
-    z-index: 5;
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    justify-content: center;
-    transform: translateY(50%);
-}
-
-
-
-.mainSectionImg {
-    border-radius: 0.5em;
-    box-shadow: 0 0 15px var(--backgroundColor);
-    filter: grayscale(100%);
-    transition: all 0.4s ease;
-    object-fit: contain;
-}
-
-.mainSectionImg:hover {
-    filter: grayscale(0%);
-    transform: scale(1.02);
-}
-
-.mainSectionAppt {
-    flex: auto;
-    padding: 1em;
+/* HOME PAGE MAIN SECTION */
+.homeMainSection {
     display: grid;
-    box-shadow: 0 0 5px var(--backgroundColor);
-    border-radius: 4px;
-    background-image: linear-gradient(135deg,
-            var(--backgroundColorLight),
-            var(--secondaryColor));
-    background-size: contain;
+    grid-template-columns: 2fr 1fr;
 }
 
-#apptBoxTitle {
-    font-size: 2em;
-    background: radial-gradient(circle, white, var(--mainColorLight), var(--mainColorBright));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-align: center;
-
-}
-
-#apptInputContainer {
-    display: grid;
-    width: 100%;
-}
-
-.apptLabels {
-    text-align: center;
-    font-size: 1.25em;
-    color: white;
-}
-
-.inputField {
+.homeSectionOne {
+    margin-right: 2em;
+    margin-left: 1em;
+    background-color: var(--backgroundColorLight);
+    color: var(--secondaryColorLight);
+    padding: 0 1em 0 1em;
     border-radius: 10px;
-    height: 2em;
+    box-shadow: 0 0 10px var(--backgroundColor);
 }
 
-.inputField:focus {
-    box-shadow: 0 0 8px var(--mainColor);
-    outline: none;
-    border: 2px solid var(--mainColor);
+.homeContent {
+    font-family: 'Merriweather', courier;
+    font-size: 1.7em;
+    font-weight: 400;
 }
 
-#date {
-    font-family: 'Poppins', sans-serif;
-    color: var(--secondaryColor);
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 5px;
+.homeMainSectionImgCont {
+    display: flex;
+    margin-right: 1em;
 }
 
-
-#submit {
-    margin: 1em;
-    width: auto;
-    cursor: pointer;
+.homeMainSectionImgCont img {
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--backgroundColor);
 }
 
 /* MAIN SECTION END */
@@ -341,8 +278,115 @@ h3 {
 
 /* CONTACT PAGE END */
 /********************************************************/
+/* TESTIMONIALS PAGE */
+.testimonial-section {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        'one one two five'
+        'three four four five';
+}
+
+.testimonial {
+    background-color: var(--mainColorLight);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px var(--backgroundColorLight);
+}
+
+.testimonial:nth-child(1) {
+    background-color: var(--backgroundColorLight);
+    grid-area: one;
+    color: var(--mainColorLight);
+}
+
+.testimonial:nth-child(2) {
+    background-color: white;
+    grid-area: two;
+}
+
+.testimonial:nth-child(3) {
+    grid-area: three;
+}
+
+.testimonial:nth-child(4) {
+    background-color: var(--backgroundColorLight);
+    grid-area: four;
+    color: var(--mainColorLight);
+}
+
+.testimonial:last-child {
+    grid-area: five;
+}
+
+.testimonial-header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name {
+    grid-area: name;
+}
+
+.role {
+    grid-area: role;
+}
+
+.light-text {
+    color: var(--mainColorLight);
+}
+
+.light-text2 {
+    color: var(--mainColor);
+}
+
+.light-transparent-text {
+    color: var(--secondaryColorLight);
+}
+
+.dark-transparent-text {
+    color: var(--color3transparent);
+}
+
+.name {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 1em;
+}
+
+.quote-bold {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.full-quote {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-section {
+        grid-template-areas:
+            'one one one one'
+            'two two two two'
+            'three three three three'
+            'four four four four'
+            'five five five five';
+    }
+}
+
+/* TESTIMONIALS PAGE END */
+/********************************************************/
 /* FOOTER */
 footer {
+    margin-top: 4em;
     width: 100%;
     background: linear-gradient(90deg,
             var(--backgroundColorLight),
@@ -433,18 +477,17 @@ footer {
 
     #navBar.show-nav-menu {
         width: 200px;
-        display: flex;
-        flex-direction: column;
+        display: grid;
     }
 
     .navBar.show-nav-menu {
         width: 50%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        justify-content: center;
     }
 
     .nav-link.show-nav-menu {
-        transition: all
+        transition: all;
     }
 
     /* .headerImgContainer.show-nav-menu {
@@ -461,8 +504,7 @@ footer {
 
     .mobileMenu {
         width: 90%;
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
 
     .mobileMenu.show-nav-menu {
